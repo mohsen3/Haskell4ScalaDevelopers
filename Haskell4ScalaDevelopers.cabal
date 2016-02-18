@@ -1,0 +1,23 @@
+name:                Haskell4ScalaDevelopers
+version:             0.1.0.0
+synopsis:            Solutions to the exercises of "Functional Programming in Scala" book in Haskell.
+description:         Please see README.md
+homepage:            http://github.com/githubuser/simple#readme
+license:             BSD3
+author:              Mohsen3
+maintainer:          example@example.com
+category:            Web
+build-type:          Simple
+-- extra-source-files:
+cabal-version:       >=1.10
+
+executable GettingStarted
+  hs-source-dirs:      src
+  main-is:             GettingStarted/Main.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N -O2 -main-is GettingStarted.Main
+  build-depends:       base
+  default-language:    Haskell2010
+
+source-repository head
+  type:     git
+  location: https://github.com/mohsen3/Haskell4ScalaDevelopers
